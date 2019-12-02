@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FloorChat</string>
+    <string name="nearby_buildings">Nearby Buildings</string>
+    <string name="busch_buildings">Busch Campus Buildings</string>
+</resources>
