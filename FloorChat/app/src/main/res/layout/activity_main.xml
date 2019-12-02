@@ -19,7 +19,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView1"
         android:layout_width="250dp"
-        android:layout_height="240dp"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
@@ -37,7 +37,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="250sp"
-        android:layout_height="240sp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/textView2" />
