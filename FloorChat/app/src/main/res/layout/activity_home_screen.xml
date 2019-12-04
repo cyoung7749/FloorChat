@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.HomeScreenActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:text="@string/nearby_buildings" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_below="@+id/recyclerView1"
+        android:text="@string/busch_buildings" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView2" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/openChatFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/stat_notify_chat" />
+
+</RelativeLayout>
