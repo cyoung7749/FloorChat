@@ -8,14 +8,14 @@ import android.view.View;
 
 import com.sendbird.android.sample.R;
 
-public class HomeScreenActivity extends AppCompatActivity {
+public class BuildingScreenActivity extends AppCompatActivity {
 
     FloatingActionButton openChatFAB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_screen);
+        setContentView(R.layout.activity_building_screen);
 
         openChatFAB = findViewById(R.id.openChatFAB);
 
