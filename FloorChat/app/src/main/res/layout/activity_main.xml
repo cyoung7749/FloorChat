@@ -17,7 +17,7 @@
         android:text="@string/nearby_buildings" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView1"
+        android:id="@+id/nearbyBuildingRecycler"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -32,15 +32,16 @@
         android:layout_centerInParent="true"
         android:textAlignment="center"
         android:textSize="30sp"
-        android:layout_below="@+id/recyclerView1"
+        android:layout_below="@+id/nearbyBuildingRecycler"
         android:text="@string/busch_buildings" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/campusBuildingRecycler"
         android:layout_width="250sp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/textView2" />
+        android:layout_centerHorizontal="true" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
