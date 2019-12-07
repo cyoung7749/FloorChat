@@ -32,4 +32,5 @@
         android:layout_marginBottom="30dp"
         android:clickable="true"
         app:srcCompat="@android:drawable/stat_notify_chat" />
+
 </RelativeLayout>
