@@ -16,7 +16,7 @@
         android:text="@string/nearby_buildings" />
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView1"
+        android:id="@+id/nearbyBuildingRecycler"
         android:layout_width="250sp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -29,10 +29,11 @@
         android:layout_centerInParent="true"
         android:textAlignment="center"
         android:textSize="30sp"
-        android:layout_below="@+id/recyclerView1"
+        android:layout_below="@+id/nearbyBuildingRecycler"
         android:text="@string/busch_buildings" />
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/campusBuildingRecycler"
         android:layout_width="250sp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
