@@ -43,7 +43,6 @@ public class JsonParserTool {
             e.printStackTrace();
         }
 
-
         if(building.equals("Engineering Building")){
             JSONObject b = findAndReturnBuildingObject(building, jsonArray);
             try {

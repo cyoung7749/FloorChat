@@ -7,11 +7,11 @@
 					"A Wing": [
 						{
 							"floor": 1,
-							"floorplan": "floorplan.pdf"
+							"floorplan": "a_wing_level1"
 						},
 						{
 							"floor": 2,
-							"floorplan": "floorplan.jpeg"
+							"floorplan": "a_wing_level2"
 						}
 					]
 				},
@@ -19,11 +19,11 @@
 					"B Wing": [
 						{
 							"floor": 1,
-							"floorplan": ""
+							"floorplan": "b_wing_level1"
 						},
 						{
 							"floor": 2,
-							"floorplan": ""
+							"floorplan": "b_wing_level2"
 						}
 					]
 				},
@@ -31,15 +31,15 @@
 					"C Wing": [
 						{
 							"floor": 0,
-							"floorplan": ""
+							"floorplan": "c_wing_basement"
 						},
 						{
 							"floor": 1,
-							"floorplan": ""
+							"floorplan": "c_wing_level1"
 						},
 						{
 							"floor": 2,
-							"floorplan": ""
+							"floorplan": "c_wing_level2"
 						}
 					]
 				},
@@ -47,11 +47,11 @@
 					"D Wing": [
 						{
 							"floor": 1,
-							"floorplan": ""
+							"floorplan": "d_wing_level1"
 						},
 						{
 							"floor": 2,
-							"floorplan": ""
+							"floorplan": "d_wing_level2"
 						}
 					]
 				}
@@ -64,7 +64,7 @@
 					"floor1": [
 						{
 							"floor": 1,
-							"floorplan": ""
+							"floorplan": "buschsc"
 						}
 					]
 				}
@@ -83,43 +83,43 @@
 					"floor1": [
 						{
 							"floor": 1,
-							"floorplan": ""
+							"floorplan": "core_level1"
 						}
 					],
 					"floor2": [
 						{
 							"floor": 2,
-							"floorplan": ""
+							"floorplan": "core_level2"
 						}
 					],
 					"floor3": [
 						{
 							"floor": 3,
-							"floorplan": ""
+							"floorplan": "core_level3"
 						}
 					],
 					"floor4": [
 						{
 							"floor": 4,
-							"floorplan": ""
+							"floorplan": "core_level4"
 						}
 					],
 					"floor5": [
 						{
 							"floor": 5,
-							"floorplan": ""
+							"floorplan": "core_level5"
 						}
 					],
 					"floor6": [
 						{
 							"floor": 6,
-							"floorplan": ""
+							"floorplan": "core_level6"
 						}
 					],
 					"floor7": [
 						{
 							"floor": 7,
-							"floorplan": ""
+							"floorplan": "core_level7"
 						}
 					]
 				}
@@ -132,19 +132,19 @@
 					"floor0": [
 						{
 							"floor": 0,
-							"floorplan": ""
+							"floorplan": "ee_basement"
 						}
 					],
 					"floor1": [
 						{
 							"floor": 1,
-							"floorplan": ""
+							"floorplan": "ee_level1"
 						}
 					],
 					"floor2": [
 						{
 							"floor": 2,
-							"floorplan": ""
+							"floorplan": "ee_level2"
 						}
 					]
 				}
@@ -157,25 +157,25 @@
 					"floor0": [
 						{
 							"floor": 0,
-							"floorplan": ""
+							"floorplan": "bio_basement"
 						}
 					],
 					"floor1": [
 						{
 							"floor": 1,
-							"floorplan": ""
+							"floorplan": "bio_level1"
 						}
 					],
 					"floor2": [
 						{
 							"floor": 2,
-							"floorplan": ""
+							"floorplan": "bio_level2"
 						}
 					],
 					"floor3": [
 						{
 							"floor": 3,
-							"floorplan": ""
+							"floorplan": "bio_level3"
 						}
 					]
 				}
@@ -188,7 +188,7 @@
 					"floor1": [
 						{
 							"floor": 1,
-							"floorplan": ""
+							"floorplan": "civil_lab_level1"
 						}
 					]
 				}
