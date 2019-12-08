@@ -30,6 +30,10 @@
 				{
 					"C Wing": [
 						{
+							"floor": 0,
+							"floorplan": ""
+						},
+						{
 							"floor": 1,
 							"floorplan": ""
 						},
@@ -40,14 +44,14 @@
 					]
 				},
 				{
-					"D Wing":[
+					"D Wing": [
 						{
-							"floor":1,
-							"floorplan":""
+							"floor": 1,
+							"floorplan": ""
 						},
 						{
-							"floor":2,
-							"floorplan":""
+							"floor": 2,
+							"floorplan": ""
 						}
 					]
 				}
@@ -57,10 +61,10 @@
 			"name":"Busch Student Center",
 			"sections":[
 				{
-					"floor1":[
+					"floor1": [
 						{
-							"floor":1,
-							"floorplan":""
+							"floor": 1,
+							"floorplan": ""
 						}
 					]
 				}
@@ -71,7 +75,124 @@
 			"sections":[
 				
 			]
+		},
+		{
+			"name":"Core",
+			"sections":[
+				{
+					"floor1": [
+						{
+							"floor": 1,
+							"floorplan": ""
+						}
+					],
+					"floor2": [
+						{
+							"floor": 2,
+							"floorplan": ""
+						}
+					],
+					"floor3": [
+						{
+							"floor": 3,
+							"floorplan": ""
+						}
+					],
+					"floor4": [
+						{
+							"floor": 4,
+							"floorplan": ""
+						}
+					],
+					"floor5": [
+						{
+							"floor": 5,
+							"floorplan": ""
+						}
+					],
+					"floor6": [
+						{
+							"floor": 6,
+							"floorplan": ""
+						}
+					],
+					"floor7": [
+						{
+							"floor": 7,
+							"floorplan": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name":"Electrical Engineering Building",
+			"sections":[
+				{
+					"floor0": [
+						{
+							"floor": 0,
+							"floorplan": ""
+						}
+					],
+					"floor1": [
+						{
+							"floor": 1,
+							"floorplan": ""
+						}
+					],
+					"floor2": [
+						{
+							"floor": 2,
+							"floorplan": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name":"Biomedical Engineering Building",
+			"sections":[
+				{
+					"floor0": [
+						{
+							"floor": 0,
+							"floorplan": ""
+						}
+					],
+					"floor1": [
+						{
+							"floor": 1,
+							"floorplan": ""
+						}
+					],
+					"floor2": [
+						{
+							"floor": 2,
+							"floorplan": ""
+						}
+					],
+					"floor3": [
+						{
+							"floor": 3,
+							"floorplan": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name":"Civil Engineering Laboratory",
+			"sections":[
+				{
+					"floor1": [
+						{
+							"floor": 1,
+							"floorplan": ""
+						}
+					]
+				}
+			]
 		}
 	]
-
 }

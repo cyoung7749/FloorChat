@@ -12,7 +12,7 @@
         android:layout_height="50sp"
         android:layout_alignParentTop="true"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="28sp"
         android:textColor="#ffff"
         android:background="@drawable/btn_purple"
         android:text="@string/nearby_buildings" />
@@ -30,7 +30,7 @@
         android:layout_height="50sp"
         android:layout_centerInParent="true"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="28sp"
         android:layout_below="@+id/nearbyBuildingRecycler"
         android:textColor="#ffff"
         android:background="@drawable/btn_purple"
