@@ -25,7 +25,7 @@ public class JsonParserTool {
     private JSONObject jsonObject;
 
     public JsonParserTool(Context context, String fileName){
-        getJsonFromAssets(context, fileName);
+        this.filePath = getPathFromAssets(context, fileName);
         this.jsonString = usingBufferedReader(filePath);
         try {
             this.jsonObject = new JSONObject(jsonString);
@@ -95,7 +95,7 @@ public class JsonParserTool {
         return null;
     }
 
-    private void getJsonFromAssets(Context context, String fileName){
+    public String getPathFromAssets(Context context, String fileName){
         File f = new File(context.getCacheDir()+fileName);
         if (!f.exists()) try {
 
@@ -111,7 +111,7 @@ public class JsonParserTool {
             fos.close();
         } catch (Exception e) { throw new RuntimeException(e); }
 
-        this.filePath = f.getPath();
+        return f.getPath();
     }
 
     private static String usingBufferedReader(String filePath)
