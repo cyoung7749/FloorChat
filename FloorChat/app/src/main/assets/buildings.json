@@ -1,0 +1,77 @@
+{
+	"building":[
+		{
+			"name":"Engineering Building",
+			"sections":[
+				{
+					"A Wing": [
+						{
+							"floor": 1,
+							"floorplan": "floorplan.pdf"
+						},
+						{
+							"floor": 2,
+							"floorplan": "floorplan.jpeg"
+						}
+					]
+				},
+				{
+					"B Wing": [
+						{
+							"floor": 1,
+							"floorplan": ""
+						},
+						{
+							"floor": 2,
+							"floorplan": ""
+						}
+					]
+				},
+				{
+					"C Wing": [
+						{
+							"floor": 1,
+							"floorplan": ""
+						},
+						{
+							"floor": 2,
+							"floorplan": ""
+						}
+					]
+				},
+				{
+					"D Wing":[
+						{
+							"floor":1,
+							"floorplan":""
+						},
+						{
+							"floor":2,
+							"floorplan":""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name":"Busch Student Center",
+			"sections":[
+				{
+					"floor1":[
+						{
+							"floor":1,
+							"floorplan":""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name":"Allison Road Classrooms",
+			"sections":[
+				
+			]
+		}
+	]
+
+}

@@ -12,15 +12,17 @@
         android:layout_height="50sp"
         android:layout_alignParentTop="true"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="20sp"
+        android:textColor="#ffff"
+        android:background="@drawable/btn_purple"
         android:text="@string/nearby_buildings" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/nearbyBuildingRecycler"
-        android:layout_width="250sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/textView" />
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/textView2"
@@ -28,17 +30,19 @@
         android:layout_height="50sp"
         android:layout_centerInParent="true"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:layout_below="@+id/nearbyBuildingRecycler"
+        android:textColor="#ffff"
+        android:background="@drawable/btn_purple"
         android:text="@string/busch_buildings" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/campusBuildingRecycler"
-        android:layout_width="250sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/textView2" />
+        android:layout_centerHorizontal="true" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/openChatFAB"

@@ -1,5 +1,7 @@
 package com.sendbird.android.sample.main;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +10,7 @@ import android.widget.TextView;
 
 import com.sendbird.android.sample.R;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.BuildingViewHolder> {
@@ -42,12 +45,21 @@ public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.Building
         public BuildingViewHolder(View v){
             super(v);
             building = v.findViewById(R.id.buildingName);
+            final Context context = v.getContext();
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     int p = getLayoutPosition();
                     System.out.println("Click: " + p);
+
+                    if(sections.get(p).hasMoreSections()){
+                        Intent section = new Intent(context, SectionActivity.class);
+                        section.putExtra("sections", (Serializable) sections.get(p).getFloors());
+                        context.startActivity(section);
+                    }
+
+
                 }
             });
         }

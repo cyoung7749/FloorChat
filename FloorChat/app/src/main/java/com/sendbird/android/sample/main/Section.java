@@ -11,11 +11,11 @@ public class Section implements Serializable {
     private List<Section> floors;
     private String floorPlan;
 
-    public Section(String id, String name, ArrayList<Section> floors, String floorPlan){
+    public Section(String id, String name, ArrayList<Section> floors){
         this.id = id;
         this.name = name;
         this.floors = floors;
-        this.floorPlan = floorPlan;
+        this.floorPlan = "";
     }
 
     public Section(String id, String name, String floorPlan){

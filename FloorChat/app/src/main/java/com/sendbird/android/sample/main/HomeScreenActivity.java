@@ -9,7 +9,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.sendbird.android.sample.R;
+import com.sendbird.android.sample.database.JsonParserTool;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class HomeScreenActivity extends AppCompatActivity {
@@ -45,12 +47,10 @@ public class HomeScreenActivity extends AppCompatActivity {
          * assign the values to buildings
          *
          */
-        sections.add(new Section("floor1", "this is floorplan"));
-        buildings.add(new Building("building1", "Busch Campus Center", sections));
-        /* these are placeholders
-        buildings.add(new Building("building2", "Engineering Building", sections));
-        buildings.add(new Building("building3", "Richard Weeks Hall", sections));
-        */
+
+        String fileName = "buildings.json";
+        JsonParserTool jsonParserTool = new JsonParserTool(getBaseContext(), fileName);
+        buildings.add(jsonParserTool.getBuilding("Engineering Building"));
 
         nearbyAdapter = new BuildingAdapter(buildings);
         nearbyRecyclerView.setAdapter(nearbyAdapter);
@@ -62,6 +62,8 @@ public class HomeScreenActivity extends AppCompatActivity {
 
         campusAdapter = new BuildingAdapter(campusBuildings);
         campusBuildingRecyclerView.setAdapter(campusAdapter);
+
+
 
         openChatFAB = findViewById(R.id.openChatFAB);
 
