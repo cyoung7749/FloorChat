@@ -18,7 +18,9 @@ public class FloorplanActivity extends AppCompatActivity {
         setContentView(R.layout.activity_floorplan);
         imageView = findViewById(R.id.floorPlanView);
 
-        imageView.setImageResource(getFloorPlanImage("a_wing_level1"));
+        String floorPlanName = getIntent().getStringExtra("floorPlan");
+
+        imageView.setImageResource(getFloorPlanImage(floorPlanName));
 
 
 

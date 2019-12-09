@@ -59,6 +59,7 @@ public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.Building
                         context.startActivity(section);
                     } else{
                         Intent floorplan = new Intent(context, FloorplanActivity.class);
+                        floorplan.putExtra("floorPlan", sections.get(p).getFloorPlan());
                         context.startActivity(floorplan);
                     }
 

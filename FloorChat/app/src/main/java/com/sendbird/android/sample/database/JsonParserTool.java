@@ -104,7 +104,7 @@ public class JsonParserTool {
         ArrayList<Section> sectionArrayList = new ArrayList<>();
         for(int i = 0; i < preSections.length(); i++){
             try {
-                JSONObject sections = preSections.getJSONObject(0);
+                JSONObject sections = preSections.getJSONObject(i);
 
                 Iterator<String> keys = sections.keys();
 
