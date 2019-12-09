@@ -56,4 +56,8 @@
     <string name="message_sending">Sending</string>
     <string name="message_failed">Failed</string>
 
+    <string name="title_activity_floorplan">FloorplanActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
 </resources>

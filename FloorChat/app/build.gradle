@@ -56,5 +56,7 @@ dependencies {
     implementation 'org.jsoup:jsoup:1.11.2'
     implementation 'com.dinuscxj:circleprogressbar:1.1.1'
     implementation 'com.github.stfalcon:multiimageview:0.1'
+    implementation 'com.github.MikeOrtiz:TouchImageView:1.4.1'
+
 }
 apply plugin: 'com.google.gms.google-services'
