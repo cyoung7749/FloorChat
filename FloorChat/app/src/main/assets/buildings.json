@@ -61,7 +61,7 @@
 			"name":"Busch Student Center",
 			"sections":[
 				{
-					"floor1": [
+					"Floor 1": [
 						{
 							"floor": 1,
 							"floorplan": "buschsc"
@@ -185,7 +185,7 @@
 			"name":"Civil Engineering Laboratory",
 			"sections":[
 				{
-					"floor1": [
+					"Floor 1": [
 						{
 							"floor": 1,
 							"floorplan": "civil_lab_level1"

@@ -42,28 +42,25 @@ public class HomeScreenActivity extends AppCompatActivity {
 
         ArrayList<Section> sections = new ArrayList<>();
 
-        /** TODO:
-         * this is the part where the we extract from the database and
-         * assign the values to buildings
-         *
-         */
-
         String fileName = "buildings.json";
         JsonParserTool jsonParserTool = new JsonParserTool(getBaseContext(), fileName);
         buildings.add(jsonParserTool.getBuilding("Engineering Building"));
+        buildings.add(jsonParserTool.getBuilding("Busch Student Center"));
+        buildings.add(jsonParserTool.getBuilding("Core"));
+        buildings.add(jsonParserTool.getBuilding("Electrical Engineering Building"));
+        buildings.add(jsonParserTool.getBuilding("Biomedical Engineering Building"));
+        buildings.add(jsonParserTool.getBuilding("Civil Engineering Laboratory"));
 
         nearbyAdapter = new BuildingAdapter(buildings);
         nearbyRecyclerView.setAdapter(nearbyAdapter);
 
         //more placeholders***************
         ArrayList<Building> campusBuildings = buildings;
-        campusBuildings.add(new Building("building4", "Allison Road Classrooms", sections));
+//        campusBuildings.add(new Building("building4", "Allison Road Classrooms", sections));
         //********************************
 
         campusAdapter = new BuildingAdapter(campusBuildings);
         campusBuildingRecyclerView.setAdapter(campusAdapter);
-
-
 
         openChatFAB = findViewById(R.id.openChatFAB);
 
