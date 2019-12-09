@@ -7,11 +7,11 @@
 					"A Wing": [
 						{
 							"floor": 1,
-							"floorplan": "floorplan.pdf"
+							"floorplan": "a_wing_level1"
 						},
 						{
 							"floor": 2,
-							"floorplan": "floorplan.jpeg"
+							"floorplan": "a_wing_level2"
 						}
 					]
 				},
@@ -19,35 +19,39 @@
 					"B Wing": [
 						{
 							"floor": 1,
-							"floorplan": ""
+							"floorplan": "b_wing_level1"
 						},
 						{
 							"floor": 2,
-							"floorplan": ""
+							"floorplan": "b_wing_level2"
 						}
 					]
 				},
 				{
 					"C Wing": [
 						{
+							"floor": 0,
+							"floorplan": "c_wing_basement"
+						},
+						{
 							"floor": 1,
-							"floorplan": ""
+							"floorplan": "c_wing_level1"
 						},
 						{
 							"floor": 2,
-							"floorplan": ""
+							"floorplan": "c_wing_level2"
 						}
 					]
 				},
 				{
-					"D Wing":[
+					"D Wing": [
 						{
-							"floor":1,
-							"floorplan":""
+							"floor": 1,
+							"floorplan": "d_wing_level1"
 						},
 						{
-							"floor":2,
-							"floorplan":""
+							"floor": 2,
+							"floorplan": "d_wing_level2"
 						}
 					]
 				}
@@ -57,10 +61,10 @@
 			"name":"Busch Student Center",
 			"sections":[
 				{
-					"floor1":[
+					"Floor 1": [
 						{
-							"floor":1,
-							"floorplan":""
+							"floor": 1,
+							"floorplan": "buschsc"
 						}
 					]
 				}
@@ -71,7 +75,124 @@
 			"sections":[
 				
 			]
+		},
+		{
+			"name":"Core",
+			"sections":[
+				{
+					"floor1": [
+						{
+							"floor": 1,
+							"floorplan": "core_level1"
+						}
+					],
+					"floor2": [
+						{
+							"floor": 2,
+							"floorplan": "core_level2"
+						}
+					],
+					"floor3": [
+						{
+							"floor": 3,
+							"floorplan": "core_level3"
+						}
+					],
+					"floor4": [
+						{
+							"floor": 4,
+							"floorplan": "core_level4"
+						}
+					],
+					"floor5": [
+						{
+							"floor": 5,
+							"floorplan": "core_level5"
+						}
+					],
+					"floor6": [
+						{
+							"floor": 6,
+							"floorplan": "core_level6"
+						}
+					],
+					"floor7": [
+						{
+							"floor": 7,
+							"floorplan": "core_level7"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name":"Electrical Engineering Building",
+			"sections":[
+				{
+					"floor0": [
+						{
+							"floor": 0,
+							"floorplan": "ee_basement"
+						}
+					],
+					"floor1": [
+						{
+							"floor": 1,
+							"floorplan": "ee_level1"
+						}
+					],
+					"floor2": [
+						{
+							"floor": 2,
+							"floorplan": "ee_level2"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name":"Biomedical Engineering Building",
+			"sections":[
+				{
+					"floor0": [
+						{
+							"floor": 0,
+							"floorplan": "bio_basement"
+						}
+					],
+					"floor1": [
+						{
+							"floor": 1,
+							"floorplan": "bio_level1"
+						}
+					],
+					"floor2": [
+						{
+							"floor": 2,
+							"floorplan": "bio_level2"
+						}
+					],
+					"floor3": [
+						{
+							"floor": 3,
+							"floorplan": "bio_level3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name":"Civil Engineering Laboratory",
+			"sections":[
+				{
+					"Floor 1": [
+						{
+							"floor": 1,
+							"floorplan": "civil_lab_level1"
+						}
+					]
+				}
+			]
 		}
 	]
-
 }

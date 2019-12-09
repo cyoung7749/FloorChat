@@ -10,7 +10,7 @@
         android:layout_height="57dp"
         android:layout_gravity="center"
         android:background="@drawable/shapes"
-        android:text="TextView"
+        android:text=""
         android:gravity="center"
-        android:textSize="28dp" />
+        android:textSize="24sp" />
 </LinearLayout>

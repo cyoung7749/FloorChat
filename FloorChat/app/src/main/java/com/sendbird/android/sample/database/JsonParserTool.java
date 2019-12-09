@@ -43,12 +43,56 @@ public class JsonParserTool {
             e.printStackTrace();
         }
 
-
         if(building.equals("Engineering Building")){
             JSONObject b = findAndReturnBuildingObject(building, jsonArray);
             try {
-                ArrayList<Section> sections = parseEngineeringBuildingSections(b.getJSONArray("sections"));
+                ArrayList<Section> sections = parseBuildingSections(b.getJSONArray("sections"));
                 return new Building("engineeringBuilding", building, sections);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+        if(building.equals("Busch Student Center")){
+            JSONObject b = findAndReturnBuildingObject(building, jsonArray);
+            try {
+                ArrayList<Section> sections = parseBuildingSections(b.getJSONArray("sections"));
+                return new Building("buschStudentCenter", building, sections);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+        if(building.equals("Core")){
+            JSONObject b = findAndReturnBuildingObject(building, jsonArray);
+            try {
+                ArrayList<Section> sections = parseBuildingSections(b.getJSONArray("sections"));
+                return new Building("core", building, sections);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+        if(building.equals("Electrical Engineering Building")){
+            JSONObject b = findAndReturnBuildingObject(building, jsonArray);
+            try {
+                ArrayList<Section> sections = parseBuildingSections(b.getJSONArray("sections"));
+                return new Building("electricalEngineeringBuilding", building, sections);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+        if(building.equals("Biomedical Engineering Building")){
+            JSONObject b = findAndReturnBuildingObject(building, jsonArray);
+            try {
+                ArrayList<Section> sections = parseBuildingSections(b.getJSONArray("sections"));
+                return new Building("biomedicalEngineeringBuilding", building, sections);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+        if(building.equals("Civil Engineering Laboratory")){
+            JSONObject b = findAndReturnBuildingObject(building, jsonArray);
+            try {
+                ArrayList<Section> sections = parseBuildingSections(b.getJSONArray("sections"));
+                return new Building("civilEngineeringLaboratory", building, sections);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -56,7 +100,7 @@ public class JsonParserTool {
         return null;
     }
 
-    private ArrayList<Section> parseEngineeringBuildingSections(JSONArray preSections){
+    private ArrayList<Section> parseBuildingSections(JSONArray preSections){
         ArrayList<Section> sectionArrayList = new ArrayList<>();
         for(int i = 0; i < preSections.length(); i++){
             try {
@@ -68,7 +112,7 @@ public class JsonParserTool {
                     String section = keys.next();
                     JSONArray floorJsonArray = sections.getJSONArray(section);
                     ArrayList<Section> floorList = new ArrayList<>();
-                    for(int j = 0; j < floorJsonArray.length(); j++){
+                    for (int j = 0; j < floorJsonArray.length(); j++){
                         JSONObject floorSection = floorJsonArray.getJSONObject(j);
                         floorList.add(new Section("floor"+floorSection.get("floor"), "Floor "+floorSection.get("floor"), (String) floorSection.get("floorplan")));
                     }
@@ -80,6 +124,56 @@ public class JsonParserTool {
         }
         return sectionArrayList;
     }
+
+//    private ArrayList<Section> parseEngineeringBuildingSections(JSONArray preSections){
+//        ArrayList<Section> sectionArrayList = new ArrayList<>();
+//        for(int i = 0; i < preSections.length(); i++){
+//            try {
+//                JSONObject sections = preSections.getJSONObject(0);
+//
+//                Iterator<String> keys = sections.keys();
+//
+//                while (keys.hasNext()){
+//                    String section = keys.next();
+//                    JSONArray floorJsonArray = sections.getJSONArray(section);
+//                    ArrayList<Section> floorList = new ArrayList<>();
+//                    for (int j = 0; j < floorJsonArray.length(); j++){
+//                        JSONObject floorSection = floorJsonArray.getJSONObject(j);
+//                        floorList.add(new Section("floor"+floorSection.get("floor"), "Floor "+floorSection.get("floor"), (String) floorSection.get("floorplan")));
+//                    }
+//                    sectionArrayList.add(new Section(section, section, floorList));
+//                }
+//            } catch (JSONException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//        return sectionArrayList;
+//    }
+//
+//    private ArrayList<Section> parseBuschSCCivilSections(JSONArray preSections){
+//        ArrayList<Section> sectionArrayList = new ArrayList<>();
+//        for(int i = 0; i < preSections.length(); i++) {
+//            try {
+//                JSONObject sections = preSections.getJSONObject(0);
+//
+//                Iterator<String> keys = sections.keys();
+//
+//                while (keys.hasNext()) {
+//                    String section = keys.next();
+//                    JSONArray floorJsonArray = sections.getJSONArray(section);
+//                    ArrayList<Section> floorList = new ArrayList<>();
+//                    for (int j = 0; j < floorJsonArray.length(); j++) {
+//                        JSONObject floorSection = floorJsonArray.getJSONObject(j);
+//                        floorList.add(new Section("Floor "+floorSection.get("floor"), "Floor "+floorSection.get("floor"), (String) floorSection.get("floorplan")));
+//                    }
+//                    sectionArrayList.add(new Section(section, section, floorList));
+//                }
+//            } catch (JSONException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//        return sectionArrayList;
+//    }
 
     private JSONObject findAndReturnBuildingObject(String name, JSONArray jArray){
         for(int i = 0; i<jArray.length(); i++){
