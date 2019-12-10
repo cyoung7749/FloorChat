@@ -36,22 +36,17 @@
         android:layout_below="@+id/sectionNameTextView"
         android:layout_marginTop="-4dp" />
 
-</RelativeLayout>
-        android:layout_height="600sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buildingTitle" />
-
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/openChatFAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="47dp"
         android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/stat_notify_chat" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
