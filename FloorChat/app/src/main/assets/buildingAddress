@@ -1,0 +1,29 @@
+{
+  "buildingAddress": [
+    {
+      "name": "Engineering Building",
+      "address": "98 Brett Rd, Piscataway, NJ 08854"
+    },
+    {
+      "name": "Busch Student Center",
+      "address": "604 Bartholomew Road, Piscataway, NJ 08854"
+    },
+    {
+      "name": "Core",
+      "address": "96 Frelinghuysen Rd, Piscataway Township, NJ 08854"
+    },
+    {
+      "name":"Electrical Engineering Building",
+      "address": "94 Brett Rd, Piscataway, NJ 08854"
+    },
+    {
+      "name":"Biomedical Engineering Building",
+      "address": "599 Taylor Rd, Piscataway, NJ 08854"
+
+    },
+    {
+      "name":"Civil Engineering Laboratory",
+      "address":"96 Frelinghuysen Rd #607, Piscataway, NJ 08854"
+    }
+  ]
+}
