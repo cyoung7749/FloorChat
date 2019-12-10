@@ -1,10 +1,13 @@
 package com.sendbird.android.sample.main;
 
+import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
+import android.view.View;
 
 import com.sendbird.android.sample.R;
 
@@ -16,6 +19,7 @@ public class SectionActivity extends AppCompatActivity {
     private TextView sectionName;
     private RecyclerView sectionRecyclerView;
     SectionAdapter adapter;
+    FloatingActionButton openChatFAB;
 
     ArrayList<Section> sections;
 
@@ -26,6 +30,15 @@ public class SectionActivity extends AppCompatActivity {
 
         buildingName = findViewById(R.id.buildingName);
         sectionName = findViewById(R.id.sectionNameTextView);
+        openChatFAB = findViewById(R.id.openChatFAB);
+
+        openChatFAB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openChatActivity();
+            }
+        });
+
         sectionRecyclerView = findViewById(R.id.sectionRecycler);
         sectionRecyclerView.setHasFixedSize(true);
         sectionRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
@@ -43,5 +56,10 @@ public class SectionActivity extends AppCompatActivity {
 
         adapter = new SectionAdapter(sections, buildingName.getText().toString());
         sectionRecyclerView.setAdapter(adapter);
+    }
+
+    public void openChatActivity() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 }

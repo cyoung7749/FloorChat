@@ -57,6 +57,8 @@ dependencies {
     implementation 'com.dinuscxj:circleprogressbar:1.1.1'
     implementation 'com.github.stfalcon:multiimageview:0.1'
     implementation 'com.github.MikeOrtiz:TouchImageView:1.4.1'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
 
 }
 apply plugin: 'com.google.gms.google-services'
