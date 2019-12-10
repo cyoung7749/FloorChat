@@ -15,14 +15,26 @@
         android:textSize="28sp"
         android:textColor="#ffff"
         android:background="@drawable/btn_purple"
-        android:text="@string/nearby_buildings" />
+        android:text="@string/busch_campus_buildings" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/btn_purple"
+        android:text="@string/nearest_order"
+        android:textAlignment="center"
+        android:textColor="#d3d3d3"
+        android:textSize="15sp" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/nearbyBuildingRecycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="-4dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/openChatFAB"

@@ -16,8 +16,8 @@
     <string name="select_channel_type">Select channel type</string>
     <string name="settings">Settings</string>
     <string name="blocked_members_list">Blocked members</string>
-    <string name="nearby_buildings">Nearby Buildings</string>
-    <string name="busch_buildings">Busch Campus Buildings</string>
+    <string name="busch_campus_buildings">Busch Campus Buildings</string>
+    <string name="nearest_order">(Ordered By Nearest Buildings)</string>
 
     <!-- login -->
     <string name="login_user_id">User ID</string>
