@@ -7,10 +7,10 @@
     <TextView
         android:id="@+id/buildingName"
         android:layout_width="match_parent"
-        android:layout_height="57dp"
+        android:layout_height="70sp"
         android:layout_gravity="center"
         android:background="@drawable/shapes"
-        android:text=""
         android:gravity="center"
+        android:text=""
         android:textSize="24sp" />
 </LinearLayout>

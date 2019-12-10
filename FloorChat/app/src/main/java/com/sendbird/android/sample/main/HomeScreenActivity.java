@@ -17,7 +17,6 @@ import java.util.ArrayList;
 public class HomeScreenActivity extends AppCompatActivity {
 
     private RecyclerView nearbyRecyclerView;
-    private RecyclerView campusBuildingRecyclerView;
     BuildingAdapter nearbyAdapter;
     BuildingAdapter campusAdapter;
 
@@ -30,13 +29,9 @@ public class HomeScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen);
 
         nearbyRecyclerView = findViewById(R.id.nearbyBuildingRecycler);
-        campusBuildingRecyclerView = findViewById(R.id.campusBuildingRecycler);
 
         nearbyRecyclerView.setHasFixedSize(true);
         nearbyRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-
-        campusBuildingRecyclerView.setHasFixedSize(true);
-        campusBuildingRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
 
         buildings = new ArrayList<>();
 
@@ -60,7 +55,6 @@ public class HomeScreenActivity extends AppCompatActivity {
         //********************************
 
         campusAdapter = new BuildingAdapter(campusBuildings);
-        campusBuildingRecyclerView.setAdapter(campusAdapter);
 
         openChatFAB = findViewById(R.id.openChatFAB);
 
