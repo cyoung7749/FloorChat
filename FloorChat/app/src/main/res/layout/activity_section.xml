@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/buildingName"
         android:layout_width="match_parent"
-        android:layout_height="50sp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:textAlignment="center"
         android:textSize="28sp"
@@ -22,12 +22,12 @@
         android:layout_width="match_parent"
         android:layout_height="25sp"
         android:layout_alignTop="@+id/textView"
-        android:layout_marginTop="49dp"
         android:background="@drawable/btn_purple"
         android:text="@string/nearest_order"
         android:textAlignment="center"
         android:textColor="#d3d3d3"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:layout_below="@+id/buildingName"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/sectionRecycler"
