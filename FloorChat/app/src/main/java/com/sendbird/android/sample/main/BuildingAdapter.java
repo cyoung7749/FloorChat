@@ -54,6 +54,7 @@ public class BuildingAdapter extends RecyclerView.Adapter<BuildingAdapter.Buildi
 
                     Intent section = new Intent(context, SectionActivity.class);
                     section.putExtra("sections", (Serializable) buildings.get(p).getSections());
+                    section.putExtra("buildingName", buildings.get(p).getName());
                     context.startActivity(section);
 
                 }

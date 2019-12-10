@@ -57,7 +57,7 @@ public class Section implements Serializable {
     }
 
     public  Boolean hasFloorplan(){
-        if(floorPlan == null){
+        if(floorPlan == null || floorPlan.isEmpty()){
             return false;
         }
         return true;

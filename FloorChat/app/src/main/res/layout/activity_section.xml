@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,22 +7,33 @@
     tools:context=".main.SectionActivity">
 
     <TextView
-        android:id="@+id/buildingTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/buildingName"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="#ffff"
+        android:background="@drawable/btn_purple"
+        android:text="@string/busch_campus_buildings"/>
+
+    <TextView
+        android:id="@+id/sectionNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/btn_purple"
+        android:text="@string/nearest_order"
+        android:textAlignment="center"
+        android:textColor="#d3d3d3"
+        android:textSize="15sp" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/sectionRecycler"
-        android:layout_width="382dp"
-        android:layout_height="661dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buildingTitle" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sectionNameTextView"
+        android:layout_marginTop="-4dp" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
