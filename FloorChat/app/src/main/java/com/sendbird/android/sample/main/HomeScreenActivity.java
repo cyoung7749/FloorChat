@@ -1,6 +1,7 @@
 package com.sendbird.android.sample.main;
 
 import android.content.Intent;
+import android.location.Location;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.sendbird.android.sample.R;
 import com.sendbird.android.sample.database.JsonParserTool;
 
@@ -19,13 +23,27 @@ public class HomeScreenActivity extends AppCompatActivity {
     private RecyclerView nearbyRecyclerView;
     BuildingAdapter nearbyAdapter;
     BuildingAdapter campusAdapter;
-
     ArrayList<Building> buildings;
     FloatingActionButton openChatFAB;
+    private FusedLocationProviderClient fusedLocationClient;
+    Location buildingLocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+        fusedLocationClient.getLastLocation()
+                .addOnSuccessListener(this, new OnSuccessListener<Location>() {
+                    @Override
+                    public void onSuccess(Location location) {
+                        // Got last known location. In some rare situations this can be null.
+                        if (location != null) {
+                            // Logic to handle location object
+                        }
+
+                    }
+                });
+
         setContentView(R.layout.activity_home_screen);
 
         nearbyRecyclerView = findViewById(R.id.nearbyBuildingRecycler);
@@ -33,12 +51,17 @@ public class HomeScreenActivity extends AppCompatActivity {
         nearbyRecyclerView.setHasFixedSize(true);
         nearbyRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
 
+        //
+        BuildingAddress b = new BuildingAddress("","", getBaseContext());
+        //
+
+
+        //
         buildings = new ArrayList<>();
-
         ArrayList<Section> sections = new ArrayList<>();
-
         String fileName = "buildings.json";
         JsonParserTool jsonParserTool = new JsonParserTool(getBaseContext(), fileName);
+        
         buildings.add(jsonParserTool.getBuilding("Engineering Building"));
         buildings.add(jsonParserTool.getBuilding("Busch Student Center"));
         buildings.add(jsonParserTool.getBuilding("Core"));

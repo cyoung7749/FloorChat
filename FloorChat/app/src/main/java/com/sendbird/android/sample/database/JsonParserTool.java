@@ -185,7 +185,7 @@ public class JsonParserTool {
         return null;
     }
 
-    public String getPathFromAssets(Context context, String fileName){
+    public static String getPathFromAssets(Context context, String fileName){
         File f = new File(context.getCacheDir()+fileName);
         if (!f.exists()) try {
 
@@ -204,7 +204,7 @@ public class JsonParserTool {
         return f.getPath();
     }
 
-    private static String usingBufferedReader(String filePath)
+    public static String usingBufferedReader(String filePath)
     {
         StringBuilder contentBuilder = new StringBuilder();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath)))
